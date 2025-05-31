@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About – Balneo</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Specific About-page tweaks */
+    .about-hero { padding:40px 0; }
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 80px;
+      position: relative;
+    }
+    .split:nth-child(odd) .split-image { order: 2; }
+    .split-text, .split-image { flex: 1 1 50%; }
+    .split-text { padding: 0 40px; }
+    .split-text h2 { font:600 32px 'Playfair Display'; margin-bottom:20px; color:#7F7E7A; }
+    .split-text p { color:#555; line-height:1.8; margin-bottom:20px; }
+    .split-image img { width:100%; display:block; border-radius:4px; }
+    /* leaf watermark */
+    .watermark {
+      position: absolute;
+      top:10%;
+      left:10%;
+      width:100px;
+      opacity:0.05;
+      pointer-events:none;
+    }
+    .split:nth-child(even) .watermark { left:auto; right:10%; }
+  </style>
+</head>
+<body>
+   <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container">
+      <a href="mailto:bookings@dayget.com.au?subject=Booking%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20book%20Balneo">
+  bookings@dayget.com.au
+</a>
+      <div class="social">
+  <a href="https://instagram.com/balneohepburnsprings/" target="_blank" rel="noopener noreferrer">
+    <img src="images/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=61572259119775" target="_blank" rel="noopener noreferrer">
+    <img src="images/facebook.png" alt="Facebook">
+  </a>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-white.png" alt="Blaneo Logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="local.html">Local Attractions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="https://www.dayget.com.au/accommodation/balneo/" class="btn book-now" target="_blank" rel="noopener noreferrer">
+        Book Now
+      </a>
+    </div>
+  </header>
+
+  <!-- About Hero (empty white space for breathing room) -->
+  <section class="about-hero container"></section>
+
+  <!-- The Guesthouse -->
+  <section class="split container">
+    <img class="watermark" src="images/leaf.png" alt="">
+    <div class="split-text">
+      <h2>THE VILLA</h2>
+      <p>Nestled amid gently rolling hills just a few kilometers east of Daylesford, a charming villa in Hepburn Springs sits at the heart of Victoria’s renowned spa country, offering the perfect balance between peaceful seclusion and easy access to vibrant township life.</p>
+      <p> Surrounded by lush forested gullies, the property is bordered on one side by the leafy expanse of the Wombat State Forest, where you might spot bounding eastern grey kangaroos at dawn. To the north lie the iconic mineral springs for which the region is famous—bubbling pools of therapeutic waters still steam softly into the cool morning air—while on clear days the silhouette of nearby Mount Franklin graces the horizon.</p>
+      <p>Native birdlife abounds, from crimson rosellas flitting through the tree canopy to kookaburras perched high above, and if you stroll the winding walking tracks around the villa, you may also glimpse shy wallabies or the occasional echidna poking about among fallen logs. </p>
+      <p>Despite its proximity to Daylesford’s galleries, cafés, and weekend markets—just a ten-minute drive away—the villa feels worlds away from the bustle, tucked into its own tranquil enclave where the only sounds are rustling gum leaves and the distant murmur of natural springs.</p>
+    </div>
+    <div class="split-image">
+      <img src="images/hero.jpg" alt="Blaneo exterior">
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="split container">
+    <img class="watermark" src="images/leaf.png" alt="">
+    <div class="split-image">
+      <img src="images/about-mission.jpg" alt="King Parrot">
+    </div>
+    <div class="split-text">
+      <h2>OUR MISSION</h2>
+      <p>Our mission is to foster a genuine sense of calm from the moment you arrive, guiding you into a quiet retreat where every detail has been thoughtfully arranged so you can fully unwind. We believe that true comfort begins with simplicity: a well-appointed living space outfitted with everything you need, from fully stocked kitchen to reliable Wi-Fi so you never have to worry about the little things. In our care, you’ll discover that peace isn’t just a backdrop—it’s the very essence of your stay.</p>
+         </div>
+  </section>
+</body>
+</html>
