@@ -382,3 +382,22 @@ body, html {
         border-bottom: none;
     }
 }
+
+
+/* Adjust logo position and hamburger size */
+header, .header-bar, .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    order: 2;
+    margin-left: auto;
+}
+
+.menu-toggle {
+    font-size: 36px;
+    padding: 15px;
+}
