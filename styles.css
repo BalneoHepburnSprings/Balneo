@@ -319,3 +319,15 @@ body, html {
         display: flex;
     }
 }
+
+
+/* Hide default nav layout on mobile */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
