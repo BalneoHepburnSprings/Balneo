@@ -247,3 +247,75 @@ body {
         margin-bottom: 10px;
     }
 }
+
+
+/* Remove side borders and ensure full width */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container, .content, .section, .hero {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+
+/* Mobile Menu Styling */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+}
+
+
+/* Hamburger Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        text-align: right;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
