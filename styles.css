@@ -264,3 +264,201 @@ body { font:300 16px/1.6 'Open Sans', sans-serif; color:#444; background:#fff; }
         border-bottom: none;
     }
 }
+
+
+/* Hide Book Now button on all views */
+.book-now {
+    display: none !important;
+}
+
+/* Header flex layout with nav to right on mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        font-size: 60px;
+        padding: 25px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 18px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+        background-color: #f8f8f8;
+        color: #333;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Desktop nav */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
+        position: static;
+        box-shadow: none;
+    }
+
+    .nav-links a {
+        padding: 10px 15px;
+        border: none;
+        color: inherit;
+        background: none;
+    }
+}
+
+/* Fixed bottom Book Now button */
+.book-now-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2000;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+@media (min-width: 769px) {
+    .book-now-fixed {
+        display: none;
+    }
+}
+
+/* Show Book Now button on desktop too */
+.book-now-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2000;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Optional hover effect */
+.book-now-fixed:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* Hide nav menu on desktop */
+@media (min-width: 769px) {
+    .nav-links {
+        display: none !important;
+    }
+}
+
+/* Book Now button always visible at bottom center */
+.book-now-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.6);
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2000;
+    border-radius: 6px;
+}
+
+.book-now-fixed:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.book-now-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.6);
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2000;
+    border-radius: 6px;
+}
+
+.book-now-fixed:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.book-now-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 8px;
+    display: block !important;
+}
+
+.book-now-fixed:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
