@@ -1,16 +1,49 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Com Page</title>
-<style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Where to Eat</title>
+  <style>
     body {
       font-family: sans-serif;
-      padding: 40px;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+    }
+    h1 {
       text-align: center;
+      margin-bottom: 40px;
+    }
+    .eat-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .eat-section img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px;
+      flex: 1 1 300px;
+    }
+    .eat-text {
+      flex: 2 1 300px;
+      padding: 10px;
+    }
+    @media (max-width: 768px) {
+      .eat-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .button-wrapper {
+      text-align: center;
+      margin-top: 40px;
     }
     a.button {
       display: inline-block;
@@ -19,12 +52,70 @@
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-<h1>Page5</h1>
-<a class="button" href="../compendium.html">← Back to Compendium</a>
+  <h1>Where to Eat</h1>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Lake+House" alt="Lake House">
+    <div class="eat-text">
+      <p><strong>Lake House</strong>: A renowned fine dining destination with contemporary Australian cuisine, located beside Lake Daylesford.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Cliffy%27s+Emporium" alt="Cliffy's Emporium">
+    <div class="eat-text">
+      <p><strong>Cliffy's Emporium</strong>: A charming rustic café offering hearty breakfasts, great coffee, and regional produce.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=The+Boathouse" alt="The Boathouse Restaurant">
+    <div class="eat-text">
+      <p><strong>The Boathouse Restaurant</strong>: Lakeside dining with relaxed modern Australian dishes and scenic views.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Wombat+Hill+House" alt="Wombat Hill House">
+    <div class="eat-text">
+      <p><strong>Wombat Hill House</strong>: Nestled in the Botanic Gardens, this café by Lake House offers seasonal dishes and sweet treats.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Kazuki%27s" alt="Kazuki's">
+    <div class="eat-text">
+      <p><strong>Kazuki's</strong>: A stylish fusion of Japanese techniques and local ingredients, offering an intimate dining experience.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Sault" alt="Sault Restaurant">
+    <div class="eat-text">
+      <p><strong>Sault</strong>: A lavender farm-based restaurant with Mediterranean-inspired meals and panoramic views.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Belvedere+Social" alt="Belvedere Social">
+    <div class="eat-text">
+      <p><strong>Belvedere Social</strong>: A vibrant and modern bistro-style venue serving shared plates and classic cocktails.</p>
+    </div>
+  </div>
+
+  <div class="eat-section">
+    <img src="https://via.placeholder.com/300x200?text=Pancho" alt="Pancho Café">
+    <div class="eat-text">
+      <p><strong>Pancho</strong>: A popular local brunch spot known for creative dishes, warm atmosphere, and great coffee.</p>
+    </div>
+  </div>
+
+  <div class="button-wrapper">
+    <a class="button" href="../compendium.html">← Back to Compendium</a>
+  </div>
 </body>
 </html>
