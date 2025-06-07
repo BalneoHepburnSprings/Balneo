@@ -637,11 +637,3 @@ body { font:300 16px/1.6 'Open Sans', sans-serif; color:#444; background:#fff; }
         display: none !important;
     }
 }
-
-/* Ensure instagram.png is visible and responsive */
-img[src*="instagram.png"] {
-    max-width: 100%;
-    height: auto;
-    display: inline-block !important;
-    visibility: visible !important;
-}
