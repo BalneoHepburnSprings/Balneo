@@ -2,18 +2,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Appliances</title>
+  <title>Where to Eat</title>
   <style>
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background-color: #444;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     body {
       font-family: sans-serif;
+      margin: 0;
       padding: 20px;
       background-color: #fff;
-      line-height: 1.6;
     }
     h1 {
       text-align: center;
+      margin-bottom: 40px;
+    }
+    .eat-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .eat-section img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px;
+      flex: 1 1 300px;
+    }
+    .eat-text {
+      flex: 2 1 300px;
+      padding: 10px;
+    }
+    @media (max-width: 768px) {
+      .eat-section {
+        flex-direction: column;
+        text-align: center;
+      }
     }
     .button-wrapper {
       text-align: center;
@@ -27,697 +67,70 @@
       text-decoration: none;
       border-radius: 5px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
   </style>
 </head>
 <body>
-  <h1>Appliances</h1>
-  <html>
+  <h1>Things to Do</h1>
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Aptos;}
-@font-face
-	{font-family:"Gotham Narrow";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-.MsoChpDefault
-	{font-size:12.0pt;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:42.55pt 72.0pt 49.65pt 72.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+  <div class="eat-section">
+    <img src="../images/spa.jpg" alt="The Mineral Spa">
+    <div class="eat-text">
+      <p><strong>The Mineral Spa</strong>: A destination day spa in the heart of Victoria’s spa country – is an idyllic restorative haven and renowned as one of the most acclaimed and awarded natural mineral spas in Australia.</p>
+    </div>
+  </div>
 
-</head>
+  <div class="eat-section">
+    <img src="../images/wombat gardens.jpg" alt="">
+    <div class="eat-text">
+      <p><strong><a href="https://www.visitvictoria.com/regions/daylesford-and-the-macedon-ranges/see-and-do/nature-and-wildlife/parks-and-gardens/vv-wombat-hill-botanic-gardens" target="_blank" style="color: #0066cc; text-decoration: underline;">Wombat Hill Botanic Gardens</a></strong>: Located at the top of Wombat Hill in the centre of Daylesford is the historic Wombat Hill Botanic Gardens. Take the scenic drive around the gardens and then stop for a while to explore. Climb the 77 stairs to the top of the Memorial Tower for views across the town. Whilst here you can explore the many areas throughout the gardens including the fernery, rotunda and begonia house. Allow time to take a break for a coffee at the café hidden amongst the plants.</p>
+    </div>
+  </div>
 
-<body lang=EN-AU style='word-wrap:break-word'>
+  <div class="eat-section">
+    <img src="../images/mills.jpg" alt="The Amazing Mill Markets">
+    <div class="eat-text">
+      <p><strong>The Amazing Mill Markets</strong>: At The Amazing Mill Markets you will find a selection of vintage clothes, vintage furniture, collectables, antiques, memorabilia, home decor, fine china, art, glass, coins, jewellery, books and records to name a few things.</p>
+    </div>
+  </div>
 
-<div class=WordSection1>
+  <div class="eat-section">
+    <img src="../images/chocolate.jpg" alt="The Chocolate Mill">
+    <div class="eat-text">
+      <p><strong>The Chocolate Mill</strong>: To this day The Chocolate Mill maintains it's commitment to a high standard. Importing the finest Belgian Fair Trade chocolate and continuing to make amazing fillings using only the best quality ingredients. Chocolate lovers far and wide continue to return again and again.</p>
+    </div>
+  </div>
 
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>1. Samsung 55&quot; Frame TV</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=453 valign=top style='width:339.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Press the
-  power button on the remote to toggle between the slide show and Smart TV
-  options. To switch TV off, press and hold for 3 seconds.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Use the
-  remote to navigate menus, select apps (Netflix, YouTube, etc.), and adjust
-  volume.</p>
-  </td>
-  <td width=148 valign=top style='width:110.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=110 height=113 src="Tips%20and%20Tricks_files/image001.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>No Power:</b>&nbsp;Check
-  TV is on by pressing the Power Button for at least 3 seconds</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>No Signal:</b>&nbsp;Ensure
-  the correct input source is selected (HDMI, AV, etc.).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Wi-Fi
-  Issues:</b>&nbsp;Restart the TV and router.</p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>&nbsp;</b></p>
-  </td>
- </tr>
-</table>
+  <div class="eat-section">
+    <img src="../images/hepburn park.jpg" alt="Hepburn Springs Mineral Reserve">
+    <div class="eat-text">
+      <p><strong>Hepburn Springs Mineral Reserve</strong>: Take some time out to rejuvenate and ‘take the waters’, or explore one of the many walking trails that are found throughout the reserve. Have a wander along the creek to each mineral spring and taste the famous mineral water from the pumps or free-flowing pipes from Australia’s first mineral reserve, created in 1865. Visitors can sample water from the Soda, Sulphur, Locano, Wyuna and (a couple of kilometres’ walk away) Argyle springs.</p>
+    </div>
+  </div>
 
-<div class=MsoNormal align=center style='text-align:center'>
+  <div class="eat-section">
+    <img src="../images/convent.jpg" alt="Convent Gallery">
+    <div class="eat-text">
+      <p><strong><a href="https://conventgallery.com.au" target="_blank" style="color: #0066cc; text-decoration: underline;">Convent Gallery</a></strong>: Nestled on the crest of Wombat Hill Botanical Gardens, over-looking Daylesford, The Convent boasts expansive views of the countryside and township below. A feast for the senses, the gallery is more than a three level haven of fine art in an historic 19th century mansion.</p>
+    </div>
+  </div>
 
-<hr size=1 width="100%" noshade style='color:#404040' align=center>
+  <div class="eat-section">
+    <img src="../images/falls.jpg" alt="Trentham Waterfalls and Walking Trails">
+    <div class="eat-text">
+      <p><strong>Trentham Waterfalls and Walking Trails</strong>: Beautiful Trentham Fal ls is one of the longest single drop waterfalls in Victoria, plunging some 32 metres over basalt columns.Surrounded by lush bushland, the moss-covered falls are located in the Coliban River Scenic Reserve, which protects original vegetation including manna gum, messmate, narrow-leaved peppermint and spring wildflowers.</p>
+    </div>
+  </div>
 
-</div>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>2. Daikin Inverter Air Conditioner</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=453 valign=top style='width:339.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Use the
-  remote to turn the unit on/off (1). </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;line-height:115%'>Note: Settings are preset for optimal
-  performance and do not need to be changed. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Press the
-  temp arrows (2) if a cooler or hotter environment is desired</p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>&nbsp;</b></p>
-  </td>
-  <td width=148 valign=top style='width:110.85pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>&nbsp;</b></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>&nbsp;</b></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=128 height=155 src="Tips%20and%20Tricks_files/image002.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Not
-  Cooling/Heating:</b>&nbsp;Ensure the unit is not set to &quot;Fan&quot; mode.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Remote Not
-  Working:</b>&nbsp;Replace the batteries or check for obstructions.  Spare
-  batteries can be found in the cupboard under the sink.</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<br clear=all style='page-break-before:always'>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>3. Bose Smart Soundbar 300</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=385 valign=top style='width:288.5pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:normal'><span
-  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-  </span></span>Press the power button on the soundbar or use the remote to
-  turn it on.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:normal'><span
-  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-  </span></span>Press the TV button for use with TV.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:normal'><span
-  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-  </span></span>Press and hold the Bluetooth button on the remote or soundbar
-  to enter pairing mode.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:normal'><span
-  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-  </span></span>Select &quot;Bose Smart Soundbar 300&quot; from your devices
-  Bluetooth settings.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:36.0pt;line-height:115%'>&nbsp;</p>
-  </td>
-  <td width=216 valign=top style='width:162.3pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=201 height=201 src="Tips%20and%20Tricks_files/image003.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:normal'><span
-  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-  </span></span><b>Sound is coming from TV speaker</b>:&nbsp;Ensure TV is selected
-  on Soundbar. Reboot TV if required</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:normal'><span
-  style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-  </span></span><b>Soundbar doesnt connect to mobile device:&nbsp;</b>On the
-  remote, press and hold the Bluetooth button l to make sure the soundbar is
-  ready to connect. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;line-height:normal'>On your mobile device, make sure
-  Location Services are turned on. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
-  margin-left:8.5pt;line-height:normal'>On your mobile device, turn the
-  Bluetooth feature off and then on. Delete the soundbar from the Bluetooth
-  list. Connect again<span style='font-size:8.0pt;color:#211D1E'> </span></p>
-  </td>
- </tr>
-</table>
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=1 width="100%" noshade style='color:#404040' align=center>
-
-</div>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>4. Delonghi Nespresso Coffee Machine</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=406 valign=top style='width:304.55pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Fill the
-  water tank and turn the machine on (1 and 2).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Insert a Nespresso
-  capsule and close the lever. (3 and 4)</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Select the
-  desired cup size (espresso or lungo) and press the button.</p>
-  </td>
-  <td width=195 valign=top style='width:146.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=179 height=89 src="Tips%20and%20Tricks_files/image004.jpg"></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=177 height=85 src="Tips%20and%20Tricks_files/image005.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:36.0pt;text-indent:-34.9pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><b>No Water Flow:</b>&nbsp;Ensure
-  the water tank is filled and properly seated.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:36.0pt;text-indent:-34.9pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><b>Capsule Stuck:</b>&nbsp;Open
-  and close the lever to eject the capsule.</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<br clear=all style='page-break-before:always'>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>5. Omega Dishwasher</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Load dishes,
-  add dishwashing tablet and select a wash cycle.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Close the
-  door and press start.</p>
-  </td>
- </tr>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Not
-  Starting:&nbsp;</b>Ensure the door is securely closed.</p>
-  </td>
- </tr>
-</table>
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=1 width="100%" noshade style='color:#404040' align=center>
-
-</div>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>6. Gas Cooktop</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=416 valign=top style='width:312.0pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Select
-  Burner.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Turn knob
-  towards you (6 oclock)</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Push knob
-  down to ignite gas.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Turn knob to
-  desired flame intensity.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:36.0pt;line-height:115%'>&nbsp;</p>
-  </td>
-  <td width=185 valign=top style='width:138.8pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=226 height=180 src="Tips%20and%20Tricks_files/image006.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>No
-  Flame:&nbsp;</b>Be sure knob is at desired position to allow gas to flow and
-  push down to ignite. If does not ignite, try using matches from fireplace
-  amenities.</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><b>&nbsp;</b></p>
-
-<b><span style='font-size:12.0pt;line-height:115%;font-family:"Aptos",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b>&nbsp;</b></p>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>7. Nectre Fireplace</span></b></p>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=353 valign=top style='width:264.5pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Place
-  firelighters or paper and dry kindling wood in the base of the firebox. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Open spindle
-  for air control. (Note: Use caution: Gloves are provided as the spindle gets
-  extremely hot after some time of use).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Light the
-  paper or firelighters. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>If necessary,
-  leave the door slightly open as the fire establishes. Do not leave unattended
-  with door open. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Once the fire
-  has taken hold add larger pieces of wood. For optimal burn conditions, place
-  the logs in a front to back orientation (right angles to the door opening).
-  Too many logs may smother the fire. </p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Once the fire
-  is established, close the door. </p>
-  </td>
-  <td width=248 valign=top style='width:186.3pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=233 height=205 src="Tips%20and%20Tricks_files/image007.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Trouble starting
-  the fire:&nbsp;</b>It is best to retain some ash in the base of the firebox.
-  A layer of ash insulates the base, helping to maintain a high temperature for
-  combustion. Also, if all the ash has been removed from the firebox, it can
-  affect the supply of air to the base of the fire. Be sure that the spindle is
-  open to allow airflow.</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><b>&nbsp;</b></p>
-
-<b><span style='font-size:12.0pt;line-height:115%;font-family:"Aptos",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span></b>
-
-<p class=MsoNormal><b>&nbsp;</b></p>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
-  style='color:black'>8. DAMANI Oven</span></b></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>&nbsp;</b></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Turn the dial
-  to select the desired cooking mode (bake, grill, etc.).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Set the
-  temperature and timer.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Place food
-  inside and close the door.</p>
-  </td>
- </tr>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Not
-  Heating:&nbsp;</b>Ensure the oven is set to the correct mode and temperature.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Uneven
-  Cooking:&nbsp;</b>Check the oven shelves are correctly positioned.</p>
-  </td>
- </tr>
-</table>
-
-<div class=MsoNormal align=center style='text-align:center'>
-
-<hr size=1 width="100%" noshade style='color:#404040' align=center>
-
-</div>
-
-<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
-  style='color:black'>9. Weber BabyQ BBQ</span></b></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>&nbsp;</b></p>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
-  style='color:black'>Basic Operation:</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=353 valign=top style='width:264.5pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Open the
-  cabinet. Locate the gas bottle and open valve (1).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Open the gas
-  valve (2) and ignite the burner using the ignition button (3).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Adjust the
-  flame using the control knobs (2).</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.2pt;text-indent:-8.2pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Clean the
-  grill after use.</p>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:36.0pt;line-height:115%'>&nbsp;</p>
-  </td>
-  <td width=248 valign=top style='width:186.3pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img
-  width=251 height=254 id="Picture 1"
-  src="Tips%20and%20Tricks_files/image008.jpg"></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-bottom:8.0pt;line-height:115%'><b>Potential issue:</b></p>
-  </td>
- </tr>
- <tr>
-  <td width=601 colspan=2 valign=top style='width:450.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;
-  margin-left:8.5pt;text-indent:-8.5pt;line-height:115%'><span
-  style='font-size:10.0pt;line-height:115%;font-family:Symbol'>·<span
-  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>BBQ will
-  not light:&nbsp;</b>Be sure that all gas values are switched on. Replace gas bottle
-  with spare if gas has run out.</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-</div>
-
-</body>
-
-</html>
+   <div class="eat-section">
+    <img src="../images/attwoods.jpg" alt="Attwoods Wines">
+    <div class="eat-text">
+      <p><strong>Attwoods Wines</strong>: Specialising in cool climate Pinot Noir and Chardonnay, our footprint covers Ballarat, Macedon Ranges and Geelong. Passionate grape growers and wine makers, we’re striving for true cool climate wines reflective of vintage and terroir. Come visit us at our winemaking home and award winning cellar door in Glenlyon, near Daylesford.</p>
+    </div>
+  </div>
 
   <div class="button-wrapper">
-    <a class="button" href="../compendium.html">← Back to Compendium</a>
+    
   </div>
+<a class="floating-button" href="../compendium.html">← Back to Compendium</a>
 </body>
 </html>

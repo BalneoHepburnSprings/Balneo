@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wi-Fi</title>
   <style>
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background-color: #444;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     body {
       font-family: sans-serif;
       padding: 40px;
@@ -33,10 +47,11 @@
   </style>
 </head>
 <body>
-  <h1>Personal Care Products</h1>
+  <h1>Wi-Fi</h1>
   <div class="image-container">
-    <img src="../images/ingredients.jpg" alt="Ingredients List" />
+    <img src="../images/wifi.png" alt="Wi-Fi Info" />
   </div>
-  <a class="button" href="../compendium.html">← Back to Compendium</a>
+  
+<a class="floating-button" href="../compendium.html">← Back to Compendium</a>
 </body>
 </html>

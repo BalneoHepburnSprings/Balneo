@@ -1,70 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Balneo</title>
-<!-- Global + Carousel CSS -->
-<link href="styles.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>Balneo</title>
+  <link href="styles.css" rel="stylesheet"/>
+  <style>
+    @font-face {
+      font-family: 'Milchella';
+      src: url('fonts/Milchella-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .hero-content p {
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 20px;
+      border-radius: 10px;
+      font-family: 'Milchella', cursive;
+      font-size: 1.2em;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 <div class="menu-toggle">☰</div>
 <div class="nav-links">
-<a href="index.html">Home</a>
-<a href="compendium.html">Compendium</a>
-
-<a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="compendium.html">Compendium</a>
+  <a href="contact.html">Contact</a>
 </div>
-<nav>
-</nav>
-<nav>
-</nav>
 <!-- Top bar -->
 <div class="top-bar">
-<div class="container">
-<a class="email" href="mailto:bookings@dayget.com.au?subject=Booking%20Inquiry&amp;body=Hello%2C%20I%20would%20like%20to%20book%20Balneo">
-  bookings@dayget.com.au
-</a>
-<div class="social">
-<a href="https://instagram.com/balneohepburnsprings/" rel="noopener noreferrer" target="_blank">
-<img alt="Instagram" src="images/instagram.png"/>
-</a>
-<a href="https://www.facebook.com/profile.php?id=61572259119775" rel="noopener noreferrer" target="_blank">
-<img alt="Facebook" src="images/facebook.png"/>
-</a>
-</div>
-</div>
+  <div class="container">
+    <a class="email" href="mailto:bookings@dayget.com.au?subject=Booking%20Inquiry&amp;body=Hello%2C%20I%20would%20like%20to%20book%20Balneo">
+      bookings@dayget.com.au
+    </a>
+    <div class="social">
+      <a href="https://instagram.com/balneohepburnsprings/" rel="noopener noreferrer" target="_blank">
+        <img alt="Instagram" src="images/instagram.png"/>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61572259119775" rel="noopener noreferrer" target="_blank">
+        <img alt="Facebook" src="images/facebook.png"/>
+      </a>
+    </div>
+  </div>
 </div>
 <!-- Header -->
 <header class="site-header">
-<div class="container">
-<a class="logo" href="index.html">
-<img alt="Greystone Logo" class="logo" src="images/logo-white.png"/>
-</a>
-<nav>
-<a href="index.html">Home</a>
-<a href="compendium.html">Compendium</a>
-
-<a href="contact.html">Contact</a>
-</nav>
-</div>
+  <div class="container">
+    <a class="logo" href="index.html">
+      <img alt="Greystone Logo" class="logo" src="images/logo-white.png"/>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="compendium.html">Compendium</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 <!-- Hero Carousel -->
-<section class="hero" style="background-color: rgba(0,0,0,0.4); padding: 1em; border-radius: 10px; color: white; font-size: 1.1em;">
-<div class="hero-slides">
-<div class="slide" style="background-image:url('images/hero1.jpg')"></div>
-<div class="slide" style="background-image:url('images/hero2.jpg')"></div>
-<div class="slide" style="background-image:url('images/hero3.jpg')"></div>
-<div class="slide" style="background-image:url('images/hero4.jpg')"></div>
-<div class="slide" style="background-image:url('images/hero5.jpg')"></div>
-<!-- duplicate first slide for seamless loop -->
-<div class="slide" style="background-image:url('images/hero1.jpg')"></div>
-</div>
-<div class="hero-content container">
-<p>Nestled in the heart of nature, this beautiful retreat is a sanctuary where time slows down, allowing you to reconnect with your partner, nature, and your inner self. Surrounded by the soothing sounds of wildlife, it’s the perfect escape from the noise of everyday life. Whether sharing quiet moments by a crackling fire or wandering hand-in-hand through sun-dappled trails, you’ll rediscover the joy of togetherness and the peace of solitude.</p>
-</div>
+<section class="hero">
+  <div class="hero-slides">
+    <div class="slide" style="background-image:url('images/hero1.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero2.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero3.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero4.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero5.jpg')"></div>
+    <div class="slide" style="background-image:url('images/hero1.jpg')"></div>
+  </div>
+  <div class="hero-content container">
+    <p>
+      Nestled in the heart of nature, this beautiful retreat is a sanctuary where time slows down,
+      allowing you to reconnect with your partner, nature, and your inner self. Surrounded by the
+      soothing sounds of wildlife, it’s the perfect escape from the noise of everyday life.
+      Whether sharing quiet moments by a crackling fire or wandering hand-in-hand through
+      sun-dappled trails, you’ll rediscover the joy of togetherness and the peace of solitude.
+    </p>
+  </div>
 </section>
-<!-- (rest of your page: gallery, about, testimonials, CTA, footer) -->
-<a class="book-now-fixed" href="https://www.dayget.com.au/accommodation/balneo/">Book Now</a><script src="js/scripts.js"></script></body>
+<a class="book-now-fixed" href="https://www.dayget.com.au/accommodation/balneo/">Book Now</a>
+<script src="js/scripts.js"></script>
+</body>
 </html>

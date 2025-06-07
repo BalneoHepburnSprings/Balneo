@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
   <style>
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background-color: #444;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     body {
       font-family: sans-serif;
       margin: 0;
@@ -62,7 +76,8 @@
     </div>
   </div>
   <div class="button-wrapper">
-    <a class="button" href="../compendium.html">← Back to Compendium</a>
+    
   </div>
+<a class="floating-button" href="../compendium.html">← Back to Compendium</a>
 </body>
 </html>
