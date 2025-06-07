@@ -1,16 +1,41 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Com Page</title>
-<style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <style>
     body {
       font-family: sans-serif;
-      padding: 40px;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .image-box {
+      flex: 1 1 300px;
+      max-width: 400px;
       text-align: center;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .text-box {
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
     }
     a.button {
       display: inline-block;
@@ -19,12 +44,25 @@
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      margin-top: 20px;
+      margin-top: 40px;
+    }
+    .button-wrapper {
+      text-align: center;
     }
   </style>
 </head>
 <body>
-<h1>Page1</h1>
-<a class="button" href="../compendium.html">← Back to Compendium</a>
+  <h1>About</h1>
+  <div class="container">
+    <div class="image-box">
+      <img src="../images/hero.jpg" alt="About" />
+    </div>
+    <div class="text-box">
+      <p>Nestled in the heart of nature, this beautiful retreat is a sanctuary where time slows down, allowing you to reconnect with your partner, nature, and your inner self. Surrounded by trees and the soothing sounds of wildlife, it’s the perfect escape from the noise of everyday life. Whether sharing quiet moments by a crackling fire or exploring nearby townships, you’ll rediscover the joy of togetherness and the peace of solitude.</p>
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <a class="button" href="../compendium.html">← Back to Compendium</a>
+  </div>
 </body>
 </html>
