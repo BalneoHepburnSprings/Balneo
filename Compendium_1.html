@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -97,7 +98,21 @@
 <nav><a href="index.html">Home</a><a href="gallery.html">Image Gallery</a><a href="compendium.html">Compendium</a><a href="contact.html">Contact</a></nav>
 </div>
 </header><script src="js/scripts.js"></script>
-<style></style></head><body>
+<style></style><style>
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background-color: #444;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    </style></head><body>
 <section class="about-hero">
 <div class="split">
 <div class="split-image">
@@ -110,4 +125,4 @@
       </p>
 </div>
 </div>
-</body></html>
+</section><a class="floating-button" href="compendium.html">← Back to Compendium</a></body></html>
