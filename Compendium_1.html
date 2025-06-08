@@ -61,19 +61,18 @@
     }
     .split:nth-child(even) .watermark { left:auto; right:10%; }
 
-    @media (max-width: 768px) {
-      .split {
-        flex-direction: column;
-      }
-      .split-image {
-        margin-bottom: 30px;
-        padding: 20px 0; /* Adjusted padding for mobile */
-      }
-      .split-text {
-        padding: 0 20px;
-      }
-    }
-  </style>
+    
+@media (max-width: 768px) {
+  .split-image {
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+  }
+
+  .split-text {
+    padding: 0 20px;
+  }
+}
+</style>
 <!-- Top bar -->
 <div class="top-bar">
 <div class="container">
