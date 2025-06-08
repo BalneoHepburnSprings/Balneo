@@ -50,7 +50,37 @@
       vertical-align: middle;
     }
   </style>
-</head>
+<style>
+.gallery-item img {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8;
+}
+
+#lightbox-overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+#lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+</style></head>
 <body>
 <div class="menu-toggle">☰</div>
 <div class="nav-links"><a href="index.html">Home</a><a href="gallery.html">Image Gallery</a><a href="compendium.html">Compendium</a><a href="contact.html">Contact</a></div>
@@ -81,5 +111,17 @@
 </header>
 <!-- Simplified Contact Section -->
 <section class="gallery"><div class="image-grid"><div class="gallery-item"><img alt="Gallery 1" src="images/Balneo_feb25_01x.jpg"/></div><div class="gallery-item"><img alt="Gallery 2" src="images/Kokkaburra.jpg"/></div><div class="gallery-item"><img alt="Gallery 3" src="images/IMG_3229.jpeg"/></div><div class="gallery-item"><img alt="Gallery 4" src="images/Balneo_feb25_10x.jpg"/></div><div class="gallery-item"><img alt="Gallery 5" src="images/Balneo_feb25_06x.jpg"/></div><div class="gallery-item"><img alt="Gallery 6" src="images/IMG_2690.jpg"/></div><div class="gallery-item"><img alt="Gallery 7" src="images/Balneo_feb25_03x.jpg"/></div><div class="gallery-item"><img alt="Gallery 8" src="images/Balneo_feb25_04x.jpg"/></div><div class="gallery-item"><img alt="Gallery 9" src="images/DSC_1342.jpg"/></div><div class="gallery-item"><img alt="Gallery 10" src="images/Balneo_feb25_07x.jpg"/></div><div class="gallery-item"><img alt="Gallery 11" src="images/about-mission.jpg"/></div><div class="gallery-item"><img alt="Gallery 12" src="images/Balneo_feb25_12x.jpg"/></div><div class="gallery-item"><img alt="Gallery 13" src="images/BlackCockatoo.jpg"/></div><div class="gallery-item"><img alt="Gallery 14" src="images/Balneo_feb25_08x.jpg"/></div><div class="gallery-item"><img alt="Gallery 15" src="images/Balneo_feb25_09x.jpg"/></div><div class="gallery-item"><img alt="Gallery 16" src="images/IMG_3183 (2).JPG"/></div><div class="gallery-item"><img alt="Gallery 17" src="images/Balneo_feb25_05x.jpg"/></div><div class="gallery-item"><img alt="Gallery 18" src="images/Balneo_feb25_11x.jpg"/></div><div class="gallery-item"><img alt="Gallery 19" src="images/Winter_1.jpg"/></div><div class="gallery-item"><img alt="Gallery 20" src="images/IMG_4062.jpeg"/></div></div></section>
-<a class="book-now-fixed" href="https://www.dayget.com.au/accommodation/balneo/">Check Availability</a><script src="js/scripts.js"></script></body>
+<a class="book-now-fixed" href="https://www.dayget.com.au/accommodation/balneo/">Check Availability</a><script src="js/scripts.js"></script><div id="lightbox-overlay"><img alt="Expanded" src=""/></div><script>
+document.querySelectorAll('.gallery-item img').forEach(img => {
+  img.addEventListener('click', () => {
+    const overlay = document.getElementById('lightbox-overlay');
+    overlay.style.display = 'flex';
+    overlay.querySelector('img').src = img.src;
+  });
+});
+
+document.getElementById('lightbox-overlay').addEventListener('click', () => {
+  document.getElementById('lightbox-overlay').style.display = 'none';
+});
+</script></body>
 </html>
