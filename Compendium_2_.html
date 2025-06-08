@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>About – Balneo</title>
+<link href="styles.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    /* Specific About-page tweaks */
+    .about-hero { padding:40px 0; }
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 80px;
+      position: relative;
+    }
+    .split:nth-child(odd) .split-image { order: 2; }
+    .split-text, .split-image { flex: 1 1 50%; }
+    .split-text { padding: 0 40px; }
+    .split-text h2 { font:600 32px 'Playfair Display'; margin-bottom:20px; color:#7F7E7A; }
+    .split-text p { color:#555; line-height:1.8; margin-bottom:20px; }
+    .split-image img { width:100%; display:block; border-radius:4px; }
+    /* leaf watermark */
+    .watermark {
+      position: absolute;
+      top:10%;
+      left:10%;
+      width:100px;
+      opacity:0.05;
+      pointer-events:none;
+    }
+    .split:nth-child(even) .watermark { left:auto; right:10%; }
+ .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background-color: #444;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 20;
+      padding: 0px;
+      background-color: #fff;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .eat-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .eat-section img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px;
+      flex: 1 1 300px;
+    }
+    .eat-text {
+      flex: 2 1 300px;
+      padding: 10px;
+    }
+    @media (max-width: 768px) {
+      .eat-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .button-wrapper {
+      text-align: center;
+      margin-top: 40px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  
+.eat-section img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+  flex: 1 1 300px;
+  object-fit: contain;
+}
+</style>
+<!-- Top bar -->
+<div class="top-bar">
+<div class="container">
+<a class="email" href="mailto:bookings@dayget.com.au?subject=Booking%20Inquiry&amp;body=Hello%2C%20I%20would%20like%20to%20book%20Balneo">
+      bookings@dayget.com.au
+    </a>
+<div class="social">
+<a href="https://instagram.com/balneohepburnsprings/" rel="noopener noreferrer" target="_blank">
+<img alt="Instagram" src="images/instagram.png"/>
+</a>
+<a href="https://www.facebook.com/profile.php?id=61572259119775" rel="noopener noreferrer" target="_blank">
+<img alt="Facebook" src="images/facebook.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-toggle">☰</div><div class="nav-links"><a href="index.html">Home</a><a href="gallery.html">Image Gallery</a><a href="compendium.html">Compendium</a><a href="contact.html">Contact</a></div><header class="site-header">
+<div class="container">
+<a class="logo" href="index.html">
+<img alt="Greystone Logo" class="logo" src="images/logo-white.png"/>
+</a>
+<nav><a href="index.html">Home</a><a href="gallery.html">Image Gallery</a><a href="compendium.html">Compendium</a><a href="contact.html">Contact</a></nav>
+</div>
+</header><script src="js/scripts.js"></script>
+
+</head>
+<body>
+<h1>Dinning Options</h1>
+<div class="eat-section">
+<img alt="Rubens" src="images/rubens_1.jpg"/>
+<div class="eat-text">
+<p><strong>Rubens</strong>: A short stroll from the Villa, Rubens is a fully licensed restaurant serving Mediterranean style cuisine in a friendly atmosphere with relaxed table service. Located on the main road between the towns of Daylesford and Hepburn Springs you can enjoy bush views from the al-fresco dining area or warm up inside near the log fire.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="Cliffy's Emporium" src="images/cliffys.jpg"/>
+<div class="eat-text">
+<p><strong>Cliffy's Emporium</strong>: Open for Breakfast, Brunchand Lunch, Cliffy’s has become one of the region’s best known cafes. Locals sometimes drop in two or three times a day for exceptional coffee, while visitors love pulling up a stool at one of the original long timber counters or sitting outdoors under the shade of the verandah and grapevines. The old bike shop next door has become part of Cliffy’s café, with comfortable seating and tables and a really cosy fireplace.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="Lake House Restaurant" src="images/lake house.jpg"/>
+<div class="eat-text">
+<p><strong>Lake House Restaurant</strong>: Lake House is located on the shores of lake Daylesford within 6 acres of country gardens. The dining room holds 2 Chefs Hats from the national Good Food Guide and multiple awards for it’s cellar and service.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="The Surly Goat" src="images/surly.jpg"/>
+<div class="eat-text">
+<p><strong>The Surly Goat</strong>: Serving a daily changing ‘prix fixe’ four course menu, of 8 to 10 items that allows us to pursue our passion for seasonality and sustainability.  We have formed great relationships with many of the local small scale regenerative producers who supply us with much of our fruit, vegetables, dairy, eggs and meats and are essential to our restaurant and the food we make.
+
+Our wine and beverage offering also leans towards the small scale, regenerative and local.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="The Farmers Arms Daylesford" src="images/farmers.jpg"/>
+<div class="eat-text">
+<p><strong>The Farmers Arms Daylesford</strong>: Step into the rich history of the Farmers Arms Daylesford, Daylesford's oldest pub, proudly serving locals and travellers since 1857. Here, tradition meets contemporary charm, offering a cosy spot where everyone is welcome—whether popping in for a pint, settling in for a meal, or just soaking up the atmosphere.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="Sault Restaurant" src="images/sault.jpg"/>
+<div class="eat-text">
+<p><strong>Sault</strong>: Sault Estate was named by the original owners, after a small French township renowned for its lavender, in the Provence-Alpes-Côte d’Azur region of South-eastern France. Seasonal menus are designed to incorporate the freshest ingredients with the highest quality produce we can source, with a strong focus on our Sault kitchen gardens, regional organic farms and producers.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="Kadota" src="images/kadota.jpg"/>
+<div class="eat-text">
+<p><strong>Kadota</strong>: A warm and inviting restaurant located in picturesque Daylesford, where lovingly crafted Japanese flavours are carefully produced using seasonal local ingredients.
+Omotenashi (おもてなし), meaning honest service and honest food, is at the heart of everything we do.Lead by the award-winning team of Chef Aaron Schembri and Front Of House Director Risa Kadota, we invite each of our guests to join us for an immersive dining experience.</p>
+</div>
+</div>
+<div class="eat-section">
+<img alt="Pancho Café" src="images/wombat hill house.png"/>
+<div class="eat-text">
+<p><strong>Wombat Hill House</strong>: Café in the beautiful Wombat Hill Botanic Gardens, Daylesford. Here you will find a seasonal menu with a nod to our region and plenty of produce from our Dairy Flat Farm as well as selected trusted suppliers.</p>
+</div>
+</div>
+<div class="button-wrapper">
+</div>
+<a class="floating-button" href="compendium.html">← Back to Compendium</a>
+</body>
+</html>
