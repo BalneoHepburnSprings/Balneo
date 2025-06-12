@@ -77,12 +77,26 @@
       flex: 2 1 300px;
       padding: 10px;
     }
-    @media (max-width: 768px) {
-      .eat-section {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
+@media (max-width: 768px) {
+  .eat-section {
+    flex-direction: column;
+    margin-bottom: 10px !important; /* Tight space between sections */
+  }
+  
+  .eat-section .eat-text p:last-child {
+    margin-bottom: 5px !important; /* Only targets last paragraph */
+  }
+  
+  .eat-section img {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+}
+  
+  .eat-section img {
+    margin-top: 10px; /* Reduce space before images */
+  }
+}
     .button-wrapper {
       text-align: center;
       margin-top: 40px;
@@ -103,7 +117,7 @@
   height: auto;
   border-radius: 8px;
   margin: 10px;
-  flex: 1 1 300px;
+  flex: 1 1 50px;
   object-fit: contain;
 }
 </style>
