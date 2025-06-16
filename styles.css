@@ -104,7 +104,7 @@ body { font:300 16px/1.6 'Open Sans', sans-serif; color:#444; background:#fff; }
 .hero-content {
   position: relative;
   z-index: 2;
-  top: 40%; transform: translateY(-40%);
+  top: 30%; transform: translateY(-40%);
   text-align: center;
   color: var(--text-light);
 }
