@@ -1,0 +1,6 @@
+# robots.txt for balneo.com.au
+
+User-agent: *
+Disallow: /
+Allow: /index.html
+
