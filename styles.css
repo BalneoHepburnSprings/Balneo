@@ -667,3 +667,18 @@ body { font:300 16px/1.6 'Open Sans', sans-serif; color:#444; background:#fff; }
   border-radius: 6px;
   object-fit: cover;
 }
+
+.top-bar .social a {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+
+/* Ensure social icons sit above the hamburger toggle */
+.top-bar .social a,
+.top-bar .social img {
+    position: relative;
+    z-index: 1102 !important;
+    pointer-events: auto;
+}
