@@ -1,10 +1,11 @@
-# robots.txt for balneo.com.au
-
-User-agent: *
-Allow: /favicon.ico
+# User-agent: *
+Allow: /favicon.png
 Allow: /logo.png
 Allow: /logo.jpg
 Disallow: /wp-admin/
 Disallow: /admin/
+
+User-agent: Googlebot-Image
+Allow: /favicon.png
 
 Sitemap: https://balneo.com.au
