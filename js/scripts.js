@@ -1,19 +1,9 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".nav-links");
-
-    toggle.addEventListener("click", function () {
-        menu.classList.toggle("open");
-    });
-});
-
-
-// Prevent hamburger menu from triggering when clicking social icons
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".top-bar .social a").forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.stopPropagation();
-        });
-    });
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.top-bar a[href^="mailto:bookings@dayget.com.au"]').forEach(a=>a.remove());
+  const toggle=document.querySelector('.menu-toggle'),menu=document.querySelector('.nav-links');
+  if(toggle&&menu){toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close':'Menu'});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu'}))}
+  const top=document.querySelector('.top-inner');
+  if(top){let socials=top.querySelector('.social-links');if(!socials){socials=document.createElement('span');socials.className='social-links';top.appendChild(socials)}socials.classList.add('top-socials');socials.innerHTML='<a href="https://instagram.com/balneohepburnsprings/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/instagram.png" alt=""></a><a href="https://www.facebook.com/profile.php?id=61572259119775" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebook.png" alt=""></a>'}
+  const directions='https://maps.app.goo.gl/GQ61XfFfQzNEjYQa8';document.querySelectorAll('.directions-link,.directions-button').forEach(a=>a.href=directions);
+  document.querySelectorAll('.footer-grid>div').forEach(section=>{const heading=section.querySelector('h3');if(heading&&heading.textContent.trim()==='Bookings'&&!section.querySelector('.airbnb-link')){const link=document.createElement('a');link.className='airbnb-link';link.href='https://www.airbnb.com.au/rooms/1354611935275426102';link.target='_blank';link.rel='noopener';link.textContent='View Balneo on Airbnb';section.appendChild(link)}});
 });

@@ -1,111 +1,12 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>About – Balneo</title>
-<link href="styles.css" rel="stylesheet"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
-<style>
-    /* Specific About-page tweaks */
-    .about-hero { padding:40px 0; }
-    .split {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 80px;
-      position: relative;
-    }
-    .split:nth-child(odd) .split-image { order: 2; }
-    .split-text, .split-image { flex: 1 1 50%; }
-    .split-text { padding: 0 40px; }
-    .split-text h2 { font:600 32px 'Playfair Display'; margin-bottom:20px; color:#7F7E7A; }
-    .split-text p { color:#555; line-height:1.8; margin-bottom:20px; }
-    .split-image img { width:100%; display:block; border-radius:4px; }
-    /* leaf watermark */
-    .watermark {
-      position: absolute;
-      top:10%;
-      left:10%;
-      width:100px;
-      opacity:0.05;
-      pointer-events:none;
-    }
-    .split:nth-child(even) .watermark { left:auto; right:10%; }
-  </style>
-</head>
-<body>
-<!-- Top bar -->
-<div class="top-bar">
-<div class="container">
-<a class="email" href="mailto:bookings@dayget.com.au?subject=Booking%20Inquiry&amp;body=Hello%2C%20I%20would%20like%20to%20book%20Balneo">
-      bookings@dayget.com.au
-    </a>
-<div class="social">
-<a href="https://instagram.com/balneohepburnsprings/" rel="noopener noreferrer" target="_blank">
-<img alt="Instagram" src="images/instagram.png"/>
-</a>
-<a href="https://www.facebook.com/profile.php?id=61572259119775" rel="noopener noreferrer" target="_blank">
-<img alt="Facebook" src="images/facebook.png"/>
-</a>
-</div>
-</div>
-</div>
-<div class="menu-toggle">☰</div><div class="nav-links"><a href="index.html">Home</a><a href="gallery.html">Image Gallery</a><a href="compendium.html">Compendium</a><a href="contact.html">Contact</a></div><header class="site-header">
-<div class="container">
-<a class="logo" href="index.html">
-<img alt="Greystone Logo" class="logo" src="images/logo-white.png"/>
-</a>
-<nav><a href="index.html">Home</a><a href="gallery.html">Image Gallery</a><a href="compendium.html">Compendium</a><a href="contact.html">Contact</a></nav>
-</div>
-</header><script src="js/scripts.js"></script>
-<style>
-  .compendium-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    padding: 40px 20px;
-    justify-items: center;
-  }
-  .compendium-item {
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 10px;
-    transition: transform 0.2s ease;
-  }
-  .compendium-item:hover {
-    transform: scale(1.03);
-  }
-  .compendium-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 6px;
-  }
-  .compendium-item span {
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-  }
-  @media (max-width: 768px) {
-    .compendium-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-</style>
-<div class="compendium-grid">
-<a class="compendium-item" href="Compendium_1.html"><img alt="Com1" src="images/page1.png"/></a>
-<a class="compendium-item" href="Compendium_2.html"><img alt="Com2" src="images/page2.png"/></a>
-<a class="compendium-item" href="Compendium_3.html"><img alt="Com3" src="images/page3.png"/></a>
-<a class="compendium-item" href="Compendium_4.html"><img alt="Com4" src="images/page4.png"/></a>
-<a class="compendium-item" href="Compendium_7.html"><img alt="Com7" src="images/page7.png"/></a>
-<a class="compendium-item" href="Compendium_6.html"><img alt="Com6" src="images/page6.png"/></a>
-<a class="compendium-item" href="Compendium_5.html"><img alt="Com5" src="images/page5.png"/></a>
-</div>
-
-</html>
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Balneo Guest Guide | Hepburn Springs</title><meta name="description" content="Useful information for Balneo guests, including villa instructions and local recommendations."><meta name="robots" content="noindex,follow"><link rel="icon" href="favicon.png"><link rel="stylesheet" href="styles.css"></head><body>
+<div class="top-bar"><div class="shell top-inner"><span>Hepburn Springs, Victoria</span><div><a href="mailto:bookings@dayget.com.au">bookings@dayget.com.au</a><span class="social-links"><a href="https://instagram.com/balneohepburnsprings/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61572259119775" target="_blank" rel="noopener">Facebook</a></span></div></div></div>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html"><img alt="Balneo" src="images/logo-white.png"></a><button class="menu-toggle" type="button" aria-expanded="false">Menu</button><nav class="nav-links"><a href="index.html">Home</a><a href="gallery.html">Explore Balneo</a><a class="active" href="compendium.html">Guest guide</a><a href="contact.html">Contact</a></nav><a class="header-cta" href="https://www.dayget.com.au/accommodation/balneo/#check-availability" target="_blank" rel="noopener">Check availability</a></div></header>
+<main><section class="page-hero guide-hero"><div class="shell"><p class="eyebrow dark">Everything for your stay</p><h1>Balneo guest guide</h1><p>Helpful information, local recommendations and simple instructions to make your stay easy.</p></div></section><section class="guide-section"><div class="shell guide-grid">
+<a class="guide-card" href="Compendium_1.html"><img src="images/page1.png" alt=""><div><span class="card-number">01</span><h2>About your stay</h2><p>Essential Balneo information and useful details.</p><span class="card-link">Open guide →</span></div></a>
+<a class="guide-card" href="Compendium_2.html"><img src="images/page2.png" alt=""><div><span class="card-number">02</span><h2>Dining nearby</h2><p>Local cafés, restaurants and places worth discovering.</p><span class="card-link">Explore dining →</span></div></a>
+<a class="guide-card" href="Compendium_3.html"><img src="images/page6.png" alt=""><div><span class="card-number">03</span><h2>Things to do</h2><p>Walks, attractions and experiences around spa country.</p><span class="card-link">Start exploring →</span></div></a>
+<a class="guide-card" href="Compendium_4.html"><img src="images/wifi.png" alt=""><div><span class="card-number">04</span><h2>Wi-Fi</h2><p>Everything you need to get connected.</p><span class="card-link">View Wi-Fi help →</span></div></a>
+<a class="guide-card" href="Compendium_5.html"><img src="images/page5.png" alt=""><div><span class="card-number">05</span><h2>Appliances</h2><p>Quick instructions for equipment around the villa.</p><span class="card-link">View instructions →</span></div></a>
+<a class="guide-card" href="Compendium_6.html"><img src="images/page4.png" alt=""><div><span class="card-number">06</span><h2>Personal care</h2><p>Information about products provided for your stay.</p><span class="card-link">View products →</span></div></a>
+<a class="guide-card" href="Compendium_7.html"><img src="images/page7.png" alt=""><div><span class="card-number">07</span><h2>Using the fireplace</h2><p>A simple guide to enjoying a warm, cosy fire.</p><span class="card-link">View fireplace guide →</span></div></a>
+</div></section></main><footer class="site-footer"><div class="shell footer-grid"><div><img src="images/logo-white.png" alt="Balneo" class="footer-logo"><p>Your private retreat in Hepburn Springs.</p></div><div><h3>Explore</h3><a href="gallery.html">Gallery</a><a href="compendium.html">Guest guide</a><a href="contact.html">Contact</a></div><div><h3>Bookings</h3><a href="tel:+61353484422">03 5348 4422</a><a href="mailto:bookings@dayget.com.au">bookings@dayget.com.au</a></div></div><div class="shell footer-bottom">© Balneo Hepburn Springs</div></footer><a class="mobile-book" href="https://www.dayget.com.au/accommodation/balneo/#check-availability" target="_blank" rel="noopener">Check availability</a><script src="js/scripts.js"></script></body></html>

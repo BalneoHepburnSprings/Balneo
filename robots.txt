@@ -1,11 +1,12 @@
-# User-agent: *
-Allow: /favicon.png
-Allow: /logo.png
-Allow: /logo.jpg
-Disallow: /wp-admin/
-Disallow: /admin/
+User-agent: *
+Allow: /
 
-User-agent: Googlebot-Image
-Allow: /favicon.png
+# Allow Balneo to appear in ChatGPT search results.
+User-agent: OAI-SearchBot
+Allow: /
 
-Sitemap: https://balneo.com.au
+# Search visibility does not require model-training access.
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://balneo.com.au/sitemap.xml
