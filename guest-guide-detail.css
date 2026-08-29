@@ -1,27 +1,41 @@
-/* Normalises the original guest-guide articles without changing their content. */
+/* Brings the original guest-guide articles into the current Balneo design. */
 html,body{margin:0!important;padding:0!important;background:#fff;color:#444}
 body{font-family:Arial,sans-serif;line-height:1.65}
-.top-bar{min-height:34px;background:#6f8199;color:#fff}
-.top-bar .container,.site-header .container{width:min(1180px,calc(100% - 40px));margin:0 auto!important}
-.top-bar .container{min-height:34px;display:flex;align-items:center;justify-content:space-between}
-.top-bar .email{color:#fff;text-decoration:none;font-size:.78rem}
-.top-bar .social{display:flex;align-items:center;gap:.65rem}
-.top-bar .social img{display:block!important;width:18px!important;height:18px!important;max-width:18px!important;object-fit:contain}
-.site-header{position:sticky!important;top:0;z-index:60;background:#7a7770!important;padding:14px 0!important;min-height:80px!important;height:auto!important}
-.site-header .container{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:2rem}
-.site-header a.logo{display:block!important;width:150px!important;max-width:150px!important;height:52px!important;overflow:hidden}
-.site-header img.logo{display:block!important;width:150px!important;max-width:150px!important;height:52px!important;max-height:52px!important;object-fit:contain!important}
-.site-header nav{display:flex!important;align-items:center;gap:1.5rem}
-.site-header nav a{color:#fff;text-decoration:none;font-size:.88rem}
 body>.menu-toggle,body>.nav-links{display:none!important}
-body>h1,.fire-heading{font-family:Milchella,Georgia,serif!important;font-weight:400!important;font-size:clamp(2.7rem,5vw,4.6rem)!important;line-height:1.05!important;margin:3.5rem auto 2.5rem!important;padding:0 20px;text-align:center}
-.floating-button{font-family:Arial,sans-serif!important;background:#7a7770!important;border-radius:0!important;box-shadow:0 6px 18px rgba(0,0,0,.16)}
-@media(max-width:700px){
-  .top-bar .container{justify-content:center}.top-bar .social{display:none}
-  .site-header{min-height:70px!important;padding:9px 0!important}
-  .site-header .container{gap:.8rem}
-  .site-header a.logo,.site-header img.logo{width:112px!important;max-width:112px!important;height:44px!important;max-height:44px!important}
-  .site-header nav{gap:.65rem;flex-wrap:wrap;justify-content:flex-end}
-  .site-header nav a{font-size:.72rem}
-  body>h1,.fire-heading{margin-top:2.3rem!important}
+.guide-detail-page .top-bar{background:#6f8199!important;color:#fff!important}
+.guide-detail-page .top-inner{min-height:34px!important}
+.guide-detail-page .top-socials img{width:18px!important;height:18px!important;max-width:18px!important}
+.guide-detail-page .site-header{position:sticky!important;top:0!important;z-index:60!important;background:#7a7770!important;padding:0!important;min-height:0!important}
+.guide-detail-page .header-inner{height:86px!important}
+.guide-detail-page .brand img{width:150px!important;max-width:150px!important;height:auto!important;max-height:56px!important;object-fit:contain!important}
+.guide-detail-page>.container,.guide-detail-page>.about-hero,.guide-detail-page>.eat-section,.guide-detail-page>.image-container,.guide-detail-page>.firewood-info,.guide-detail-page>.video-container{width:min(1040px,calc(100% - 40px))!important;margin-left:auto!important;margin-right:auto!important}
+.guide-detail-page>h1,.guide-detail-page .fire-heading,.guide-detail-page .about-hero h2{font-family:Milchella,Georgia,serif!important;font-weight:400!important;font-size:clamp(2.8rem,5vw,4.8rem)!important;line-height:1.05!important;text-align:center!important;color:#444!important;margin:4rem auto 2.5rem!important;padding:0 20px}
+.guide-detail-page .split,.guide-detail-page .eat-section{background:#f3eee8!important;border:1px solid rgba(68,68,68,.1)!important;margin-top:0!important;margin-bottom:1.25rem!important;padding:1.35rem!important;gap:1.5rem!important;border-radius:0!important}
+.guide-detail-page .split{width:min(1040px,calc(100% - 40px))!important;margin-left:auto!important;margin-right:auto!important}
+.guide-detail-page .split-text{padding:1rem 1.5rem!important}
+.guide-detail-page .split-text h2{font-family:Milchella,Georgia,serif!important;font-size:2.2rem!important;font-weight:400!important;color:#444!important}
+.guide-detail-page .eat-section{display:grid!important;grid-template-columns:260px 1fr!important;align-items:center!important;width:min(1040px,calc(100% - 40px))!important}
+.guide-detail-page .eat-section img{width:100%!important;max-width:260px!important;height:190px!important;margin:0!important;object-fit:cover!important;border-radius:0!important}
+.guide-detail-page .eat-text{padding:1rem!important}
+.guide-detail-page .image-gallery{width:min(1180px,calc(100% - 40px))!important;margin:0 auto 4rem!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:1rem!important}
+.guide-detail-page .image-gallery .gallery-item{margin:0!important;break-inside:auto!important}
+.guide-detail-page .image-gallery img{width:100%!important;height:auto!important;max-width:none!important;border-radius:0!important}
+.guide-detail-page .image-container{padding:1.5rem!important;background:#f3eee8!important;text-align:center!important}
+.guide-detail-page .image-container img{display:block!important;max-width:100%!important;height:auto!important;margin:auto!important}
+.guide-detail-page .firewood-info{font-size:1rem!important;line-height:1.75!important;text-align:left!important;background:#f3eee8!important;padding:2rem!important;margin-top:3rem!important}
+.guide-detail-page .video-container{max-width:820px!important;margin-bottom:2rem!important}
+.guide-detail-page .video-container iframe{width:100%!important;aspect-ratio:16/9!important;height:auto!important}
+.guide-detail-page .video-fallback{text-align:center;margin-top:.8rem}
+.guide-detail-page .floating-button{position:static!important;inset:auto!important;transform:none!important;display:table!important;margin:3rem auto 5rem!important;background:#7a7770!important;color:#fff!important;border-radius:0!important;padding:1rem 1.35rem!important;box-shadow:none!important}
+.guide-detail-page .site-footer{clear:both!important;margin-top:0!important}
+@media(max-width:800px){
+  .guide-detail-page .header-inner{height:72px!important}
+  .guide-detail-page .brand img{width:125px!important;max-width:125px!important}
+  .guide-detail-page>.container,.guide-detail-page>.about-hero,.guide-detail-page>.eat-section,.guide-detail-page>.image-container,.guide-detail-page>.firewood-info,.guide-detail-page>.video-container,.guide-detail-page .split{width:min(100% - 28px,1040px)!important}
+  .guide-detail-page .eat-section{grid-template-columns:1fr!important;padding:1rem!important;text-align:left!important}
+  .guide-detail-page .eat-section img{max-width:none!important;height:220px!important}
+  .guide-detail-page .split{display:block!important;padding:1rem!important}
+  .guide-detail-page .split-text{padding:1rem .25rem!important}
+  .guide-detail-page .image-gallery{grid-template-columns:1fr!important;width:calc(100% - 28px)!important}
+  .guide-detail-page>h1,.guide-detail-page .fire-heading,.guide-detail-page .about-hero h2{margin-top:2.6rem!important}
 }

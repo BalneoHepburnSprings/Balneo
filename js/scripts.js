@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded',()=>{
+  const guideBack=document.querySelector('.floating-button[href*="compendium"]');
+  if(guideBack){
+    document.body.classList.add('guide-detail-page');
+    document.querySelectorAll('body>.menu-toggle,body>.nav-links').forEach(el=>el.remove());
+    const guideTop=document.querySelector('.top-bar');
+    if(guideTop)guideTop.innerHTML='<div class="shell top-inner"><span>Hepburn Springs, Victoria</span><span class="social-links"></span></div>';
+    const guideHeader=document.querySelector('.site-header');
+    if(guideHeader)guideHeader.innerHTML='<div class="shell header-inner"><a href="index.html" class="brand"><img src="images/logo-white.png" alt="Balneo"></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="gallery.html">Explore Balneo</a><a class="active" href="compendium.html">Guest guide</a><a href="contact.html">Contact</a></nav><a class="header-cta" href="https://www.dayget.com.au/accommodation/balneo/#check-availability" target="_blank" rel="noopener">Check availability</a></div>';
+    if(!document.querySelector('.site-footer'))document.body.insertAdjacentHTML('beforeend','<footer class="site-footer"><div class="shell footer-grid"><div><img src="images/logo-white.png" alt="Balneo" class="footer-logo"><p>Your private retreat in Hepburn Springs.</p></div><div><h3>Explore</h3><a href="gallery.html">Gallery</a><a href="compendium.html">Guest guide</a><a href="contact.html">Contact</a></div><div><h3>Bookings</h3><a href="tel:+61353484422">03 5348 4422</a><a href="mailto:bookings@dayget.com.au">bookings@dayget.com.au</a></div></div><div class="shell footer-bottom">© Balneo Hepburn Springs</div></footer>');
+  }
   document.querySelectorAll('.top-bar a[href^="mailto:bookings@dayget.com.au"]').forEach(a=>a.remove());
   const toggle=document.querySelector('.menu-toggle'),menu=document.querySelector('.nav-links');
   if(toggle&&menu){toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close':'Menu'});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu'}))}
