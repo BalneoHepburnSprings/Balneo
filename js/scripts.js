@@ -1,3 +1,12 @@
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-2CXSD3Z3DS');
+const googleAnalyticsScript=document.createElement('script');
+googleAnalyticsScript.async=true;
+googleAnalyticsScript.src='https://www.googletagmanager.com/gtag/js?id=G-2CXSD3Z3DS';
+document.head.appendChild(googleAnalyticsScript);
+
 document.addEventListener('DOMContentLoaded',()=>{
   const guideBack=document.querySelector('.floating-button[href*="compendium"]');
   if(guideBack){
@@ -16,4 +25,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(top){let socials=top.querySelector('.social-links');if(!socials){socials=document.createElement('span');socials.className='social-links';top.appendChild(socials)}socials.classList.add('top-socials');socials.innerHTML='<a href="https://instagram.com/balneohepburnsprings/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/instagram.png" alt=""></a><a href="https://www.facebook.com/profile.php?id=61572259119775" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebook.png" alt=""></a>'}
   const directions='https://maps.app.goo.gl/GQ61XfFfQzNEjYQa8';document.querySelectorAll('.directions-link,.directions-button').forEach(a=>a.href=directions);
   document.querySelectorAll('.footer-grid>div').forEach(section=>{const heading=section.querySelector('h3');if(heading&&heading.textContent.trim()==='Bookings'&&!section.querySelector('.airbnb-link')){const link=document.createElement('a');link.className='airbnb-link';link.href='https://www.airbnb.com.au/rooms/1354611935275426102';link.target='_blank';link.rel='noopener';link.textContent='View Balneo on Airbnb';section.appendChild(link)}});
+  document.addEventListener('click',event=>{
+    const link=event.target.closest('a[href*="dayget.com.au/accommodation/balneo/"][href*="check-availability"]');
+    if(!link)return;
+    const placement=link.closest('.site-header')?'header':link.classList.contains('mobile-book')?'mobile_sticky':link.closest('.hero')?'homepage_hero':link.closest('.booking-banner')?'homepage_booking_banner':link.closest('.contact-page,.mobile-contact-actions')?'contact':'other';
+    gtag('event','check_availability_click',{
+      link_url:link.href,
+      link_text:link.textContent.trim(),
+      button_location:placement,
+      page_path:window.location.pathname
+    });
+  });
 });
